@@ -1,0 +1,8 @@
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from 179.217.246.223 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+Jun 16 22:21:27 portal.inf.ufsm.br sshd[31991]: Accepted keyboard-interactive/pam for lferreira from 179.217.245.189 port 36816 ssh2
+Jun 17 00:45:19 portal.inf.ufsm.br sshd[33080]: Accepted publickey for jvlima from 191.246.36.74 port 53968 ssh2: RSA SHA256:JIWkccfDjVZJn4YoDObSDYfU3rmL/kGnn53D/Sy6Y/k
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from 1.119.255.255 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from 1.119.255.255 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from  213.32.108.123 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from  213.32.108.123 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from 1.119.255.255 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A

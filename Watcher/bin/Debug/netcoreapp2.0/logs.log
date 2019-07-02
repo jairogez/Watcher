@@ -1,0 +1,19 @@
+
+02/07/2019 02:34:49
+Erro ao ler arquivo ini: Could not find file '/home/jairo/Documentos/Watcher/Watcher/bin/Debug/netcoreapp2.0/ini.arq'.
+
+02/07/2019 02:34:54
+Detectado acesso incomum, localização: Beijing, China.
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from 1.119.255.255 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+
+02/07/2019 02:36:16
+Detectado acesso incomum, localização: Rotterdam, Netherlands.
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from  213.32.108.123 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+
+02/07/2019 02:38:58
+Detectado acesso incomum, localização: Rotterdam, Netherlands.
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from  213.32.108.123 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
+
+02/07/2019 02:39:16
+Detectado acesso incomum, localização: Beijing, China.
+Jun 16 15:33:05 portal.inf.ufsm.br sshd[27156]: Accepted publickey for rtrindade from 1.119.255.255 port 48720 ssh2: RSA SHA256:X15PDVHhl8jR5EGDjegvnFZNyAtzVmQKcjD68k6H72A
