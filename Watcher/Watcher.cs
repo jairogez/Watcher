@@ -61,7 +61,7 @@ namespace Watcher
             }
         }
 
-        public static void IdentificaIp(string login)
+        private void IdentificaIp(string login)
         {
             Regex ip = new Regex(@"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b");
             MatchCollection result = ip.Matches(login);
@@ -91,12 +91,12 @@ namespace Watcher
         {
             try
             {
-                if (!File.Exists(diretorio + Path.DirectorySeparatorChar + nomeArquivo))
+                if (!File.Exists(diretorio + Path.DirectorySeparatorChar + this.nomeArquivo))
                 {
                     this.pos = 0;
                     return;
                 }
-                var ini = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar + nomeArquivo + ".ini";
+                var ini = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar + this.nomeArquivo + ".ini";
                 StreamReader sr = new StreamReader(ini);
                 this.pos = Convert.ToInt32(sr.ReadLine().Split('=')[1].Trim());
             }
@@ -121,10 +121,10 @@ namespace Watcher
             }
         }
 
-        private static void Gravalog(string msg, IpInfo ipInfo = null)
+        private void Gravalog(string msg, IpInfo ipInfo = null)
         {
             string appPath = Directory.GetCurrentDirectory();
-            string arqPath = Path.DirectorySeparatorChar + "logs.log";
+            string arqPath = Path.DirectorySeparatorChar + this.nomeArquivo + ".log";
             string fullpath = appPath + arqPath;
             string dataHora = DateTime.Now.Day.ToString("00") + "/" + DateTime.Now.Month.ToString("00") + "/" + DateTime.Now.Year.ToString() + " " + DateTime.Now.Hour.ToString("00") + ":" + DateTime.Now.Minute.ToString("00") + ":" + DateTime.Now.Second.ToString("00");
             StreamWriter sw = new StreamWriter(fullpath, true);
