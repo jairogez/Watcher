@@ -16,7 +16,7 @@ namespace Watcher
         private long pos = 0;
         private string diretorio, nomeArquivo;
         public Watcher(string diretorio, string nomeArquivo)
-        {
+        { 
             this.diretorio = diretorio;
             this.nomeArquivo = nomeArquivo;
             StreamReader sr = new StreamReader(diretorio + Path.DirectorySeparatorChar + nomeArquivo);
@@ -27,8 +27,9 @@ namespace Watcher
             using (FileSystemWatcher watcher = new FileSystemWatcher())
             {
                 watcher.Path = diretorio;
-                watcher.NotifyFilter = NotifyFilters.LastWrite;
-                watcher.Changed += OnChanged;
+                watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite;
+                watcher.Changed += Processa;
+                watcher.Created += Processa;
                 watcher.Filter = nomeArquivo;
                 watcher.EnableRaisingEvents = true;
                 while (true)
@@ -36,10 +37,9 @@ namespace Watcher
                     /* roda até o usuário finalizar */
                 }
             }
-            GravaPosIni();
         }
 
-        private void OnChanged(object source, FileSystemEventArgs e)
+        private void Processa(object source, FileSystemEventArgs e)
         {
             List<string> buffer = new List<string>();
             try
