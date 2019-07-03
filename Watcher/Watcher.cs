@@ -19,22 +19,18 @@ namespace Watcher
         { 
             this.diretorio = diretorio;
             this.nomeArquivo = nomeArquivo;
-            StreamReader sr = new StreamReader(diretorio + Path.DirectorySeparatorChar + nomeArquivo);
             LeArquivoIni();
-            if(this.pos == 0)
-                this.pos = sr.BaseStream.Length;
-            sr.Close();
             using (FileSystemWatcher watcher = new FileSystemWatcher())
             {
                 watcher.Path = diretorio;
-                watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite;
+                watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.CreationTime;
                 watcher.Changed += Processa;
                 watcher.Created += Processa;
                 watcher.Filter = nomeArquivo;
                 watcher.EnableRaisingEvents = true;
                 while (true)
                 {
-                    /* roda até o usuário finalizar */
+                    /* roda até usuário finalizar */
                 }
             }
         }
@@ -44,19 +40,19 @@ namespace Watcher
             List<string> buffer = new List<string>();
             try
             {
-                using (var fs = new FileStream(this.diretorio + Path.DirectorySeparatorChar + this.nomeArquivo, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                using (var fs = new FileStream(this.diretorio + Path.DirectorySeparatorChar + this.nomeArquivo, FileMode.Open, FileAccess.Read, FileShare.None))
                 using (var sr = new StreamReader(fs, Encoding.Default))
                 {
-                    sr.BaseStream.Position = this.pos;
+                    sr.BaseStream.Position = sr.BaseStream.Length < this.pos ? sr.BaseStream.Position : this.pos;
                     while (sr.Peek() > -1)
                         buffer.Add(sr.ReadLine());
                     this.pos = sr.BaseStream.Position;
                     if (buffer.Count != 0)
                         GravaPosIni();       
-                    foreach (string s in buffer)
-                        if (s.Contains("Accepted"))
-                            IdentificaIp(s);
                 }
+                foreach (string s in buffer)
+                    if (s.Contains("Accepted"))
+                        IdentificaIp(s);
             }
             
             catch (Exception ex)
@@ -95,14 +91,19 @@ namespace Watcher
         {
             try
             {
-                var ini = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar + "ini.arq";
+                if (!File.Exists(diretorio + Path.DirectorySeparatorChar + nomeArquivo))
+                {
+                    this.pos = 0;
+                    return;
+                }
+                var ini = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar + nomeArquivo + ".ini";
                 StreamReader sr = new StreamReader(ini);
                 this.pos = Convert.ToInt32(sr.ReadLine().Split('=')[1].Trim());
             }
-            catch (Exception e)
+            catch (FileNotFoundException e)
             {
                 this.pos = 0;
-                Gravalog("Erro ao ler arquivo ini: " + e.Message);
+                Gravalog("Arquivo ini não encontrado, analisando novos registros.");
             }
         }
 
@@ -110,7 +111,7 @@ namespace Watcher
         {
             try
             {
-                var ini = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar + "ini.arq";
+                var ini = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + Path.DirectorySeparatorChar + nomeArquivo + ".ini";
                 File.WriteAllText(ini, "pos=" + this.pos.ToString());
             }
             catch (Exception e)

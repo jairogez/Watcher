@@ -1,31 +1,28 @@
 
-03/07/2019 04:48:34
-Erro ao ler arquivo ini: Could not find file '/home/jairo/Documentos/Watcher/Watcher/bin/Debug/netcoreapp2.0/ini.arq'.
-
-03/07/2019 04:48:51
+03/07/2019 14:06:51
 Detectado acesso incomum, localização: Beijing, China.
 Jun 16 22:21:27 portal.inf.ufsm.br sshd[31991]: Accepted keyboard-interactive/pam for lferreira from 218.107.132.66 port 36816 ssh2
 
-03/07/2019 04:48:52
+03/07/2019 14:06:52
 Detectado acesso incomum, localização: Beijing, China.
 Jun 16 22:21:27 portal.inf.ufsm.br sshd[31991]: Accepted keyboard-interactive/pam for lferreira from 218.107.132.66 port 36816 ssh2
 
-03/07/2019 04:48:52
+03/07/2019 14:06:52
 Detectado acesso incomum, localização: Beijing, China.
 Jun 16 22:21:27 portal.inf.ufsm.br sshd[31991]: Accepted keyboard-interactive/pam for lferreira from 218.107.132.66 port 36816 ssh2
 
-03/07/2019 04:48:53
+03/07/2019 14:06:53
 Detectado acesso incomum, localização: Beijing, China.
 Jun 16 22:21:27 portal.inf.ufsm.br sshd[31991]: Accepted keyboard-interactive/pam for lferreira from 218.107.132.66 port 36816 ssh2
 
-03/07/2019 04:49:00
+03/07/2019 14:06:59
 Detectado acesso incomum, localização: Hackney, United Kingdom.
 Jun 17 00:45:19 portal.inf.ufsm.br sshd[33080]: Accepted publickey for jvlima from 213.228.229.96 port 53968 ssh2: RSA SHA256:JIWkccfDjVZJn4YoDObSDYfU3rmL/kGnn53D/Sy6Y/k
 
-03/07/2019 04:49:01
+03/07/2019 14:06:59
 Detectado acesso incomum, localização: Hackney, United Kingdom.
 Jun 17 00:45:19 portal.inf.ufsm.br sshd[33080]: Accepted publickey for jvlima from 213.228.229.96 port 53968 ssh2: RSA SHA256:JIWkccfDjVZJn4YoDObSDYfU3rmL/kGnn53D/Sy6Y/k
 
-03/07/2019 04:49:07
+03/07/2019 14:07:04
 Detectado acesso incomum, localização: Paris, France.
 Jun 17 00:45:19 portal.inf.ufsm.br sshd[33080]: Accepted publickey for jfgez from 176.31.84.249 port 53968 ssh2: RSA SHA256:JIWkccfDjVZJn4YoDObSDYfU3rmL/kGnn53D/Sy6Y/k

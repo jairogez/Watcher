@@ -30,3 +30,14 @@ C:/Users/reina/Downloads/Watcher/Watcher/obj/Debug/netcoreapp2.0/Watcher.pdb
 /home/jairo/Documentos/Watcher/Watcher/obj/Debug/netcoreapp2.0/Watcher.AssemblyInfo.cs
 /home/jairo/Documentos/Watcher/Watcher/obj/Debug/netcoreapp2.0/Watcher.dll
 /home/jairo/Documentos/Watcher/Watcher/obj/Debug/netcoreapp2.0/Watcher.pdb
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\bin\Debug\netcoreapp2.0\Watcher.deps.json
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\bin\Debug\netcoreapp2.0\Watcher.runtimeconfig.json
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\bin\Debug\netcoreapp2.0\Watcher.runtimeconfig.dev.json
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\bin\Debug\netcoreapp2.0\Watcher.dll
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\bin\Debug\netcoreapp2.0\Watcher.pdb
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\obj\Debug\netcoreapp2.0\Watcher.csprojResolveAssemblyReference.cache
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\obj\Debug\netcoreapp2.0\Watcher.csproj.CoreCompileInputs.cache
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\obj\Debug\netcoreapp2.0\Watcher.AssemblyInfoInputs.cache
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\obj\Debug\netcoreapp2.0\Watcher.AssemblyInfo.cs
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\obj\Debug\netcoreapp2.0\Watcher.dll
+C:\Users\reina\Documents\Watcher\Watcher\Watcher\obj\Debug\netcoreapp2.0\Watcher.pdb
